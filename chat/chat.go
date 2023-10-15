@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"io"
-	"sku-service/log"
 	"time"
 )
 
@@ -13,11 +12,11 @@ type Server struct {
 
 func (s *Server) mustEmbedUnimplementedChatServiceServer() {
 	//TODO implement me
-	log.Info("implement me")
+	fmt.Println("implement me")
 }
 
 func (s *Server) SayHello(ctx context.Context, in *Message) (*Message, error) {
-	log.Info("Receive message : %v", in.Body)
+	fmt.Println("Receive message : %v", in.Body)
 	return &Message{Body: "hello grpc"}, nil
 }
 

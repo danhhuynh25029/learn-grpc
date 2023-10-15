@@ -6,8 +6,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"io"
+	"log"
 	"service/chat"
-	"sku-service/log"
 	"time"
 )
 
